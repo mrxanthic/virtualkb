@@ -57,7 +57,7 @@ const Keyboard = {
             // Add attributes/classes
             keyElement.setAttribute("type", "button");
             keyElement.classList.add("keyboard__key");
-            keyElement.setAttribute("id", )
+            keyElement.setAttribute("id", key);
 
             switch (key) {
 
@@ -86,7 +86,7 @@ const Keyboard = {
 
 window.addEventListener('keypress', (event) => {
     console.log(event.key);
-    document.getElementById("event.key").click();
+    document.getElementById(event.key).style.backgroundColor = "white";
     
 });
 
