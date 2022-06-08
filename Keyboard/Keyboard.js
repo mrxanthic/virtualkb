@@ -84,10 +84,14 @@ const Keyboard = {
 };
 
 
-window.addEventListener('keypress', (event) => {
+window.addEventListener('keydown', (event) => {
     console.log(event.key);
-    document.getElementById(event.key).style.backgroundColor = "white";
-    
+    document.getElementById(event.key).className="keyDown";
+});
+
+window.addEventListener('keyup', (event) => {
+    console.log(event.key);
+    document.getElementById(event.key).className="keyboard__key";
 });
 
 window.addEventListener("DOMContentLoaded", function () {
